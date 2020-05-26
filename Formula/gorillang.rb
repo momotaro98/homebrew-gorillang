@@ -2,16 +2,16 @@
 class Gorillang < Formula
   desc "gorillang"
   homepage "https://github.com/momotaro98/gorillang"
-  version "1.0.8"
+  version "1.0.10"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/momotaro98/gorillang/releases/download/v1.0.8/gorillang_1.0.8_Darwin_x86_64.tar.gz"
-    sha256 "fbaa85b983e8e7309efdb4fb4efd90b2c9e11469ed8e013b05d925bcbdf8b96d"
+    url "https://github.com/momotaro98/gorillang/releases/download/v1.0.10/gorillang_1.0.10_Darwin_x86_64.tar.gz"
+    sha256 "b1d70f5414d5cab2718f29d513002b726911c5444349c8a08b52c3068122c16a"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/momotaro98/gorillang/releases/download/v1.0.8/gorillang_1.0.8_linux_x86_64.tar.gz"
-      sha256 "cf0cfc4eb8fa12d808c56c8d1ee3cba23e4b9f9a5d18aa58e95523b7f4d68d9b"
+      url "https://github.com/momotaro98/gorillang/releases/download/v1.0.10/gorillang_1.0.10_linux_x86_64.tar.gz"
+      sha256 "39fdd25daa0ecaed1a60a91fdc0e444eb3810ea5a5f421b87174044ef82549a0"
     end
   end
 
