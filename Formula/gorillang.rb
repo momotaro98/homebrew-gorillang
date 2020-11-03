@@ -2,16 +2,16 @@
 class Gorillang < Formula
   desc "gorillang"
   homepage "https://github.com/momotaro98/gorillang"
-  version "1.0.10"
+  version "1.0.13"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/momotaro98/gorillang/releases/download/v1.0.10/gorillang_1.0.10_Darwin_x86_64.tar.gz"
-    sha256 "b1d70f5414d5cab2718f29d513002b726911c5444349c8a08b52c3068122c16a"
+    url "https://github.com/momotaro98/gorillang/releases/download/v1.0.13/gorillang_1.0.13_Darwin_x86_64.tar.gz"
+    sha256 "6f24ca6c3dff4632731f0c24ab1d032b0c3db76931f7c155afa4894e63c737e6"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/momotaro98/gorillang/releases/download/v1.0.10/gorillang_1.0.10_linux_x86_64.tar.gz"
-      sha256 "39fdd25daa0ecaed1a60a91fdc0e444eb3810ea5a5f421b87174044ef82549a0"
+      url "https://github.com/momotaro98/gorillang/releases/download/v1.0.13/gorillang_1.0.13_linux_x86_64.tar.gz"
+      sha256 "1eadb45e7105322453583e35070788d1eb26f63b55034058ea77e833aeea63b4"
     end
   end
 
@@ -20,6 +20,6 @@ class Gorillang < Formula
   end
 
   test do
-    system "#{bin}/goreleaser -v"
+    system "#{bin}/gorillang --version"
   end
 end
